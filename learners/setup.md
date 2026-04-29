@@ -2,53 +2,59 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+This lesson uses _either_ a graphical interface (GitHub Desktop) _or_ the
+command line interface. You can use whichever one you're most comfortable with.
 
-## Data Sets
-
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+There are many different interfaces to git, including many built into code
+editors such as VS Code, PyCharm, Emacs, and so on. We use GitHub Desktop here
+because its interface mostly closely maps to the standard command line
+interface, meaning that learning it is mostly easily transferable to other
+interfaces.
 
 ## Software Setup
 
 ::::::::::::::::::::::::::::::::::::::: discussion
 
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `solution`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+### Graphical Interface
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::: solution
 
-### Windows
+### Managed Windows
 
-Use PuTTY
+Install via Software Centre
 
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### MacOS
-
-Use Terminal.app
-
-:::::::::::::::::::::::::
-
+::::::::::::::::
 
 :::::::::::::::: solution
 
-### Linux
+### MacOS/Linux/Unmanaged Windows
 
-Use Terminal
+[Download GitHub Desktop](https://desktop.github.com/download)
 
-:::::::::::::::::::::::::
+::::::::::::::::
 
+
+::::::::::::::::::::::::::::::::::::::: discussion
+
+### Command Line Interface
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### Managed Windows
+
+Install via Software Centre
+
+::::::::::::::::
+
+:::::::::::::::: solution
+
+### MacOS/Linux/Unmanaged Windows
+
+[Download command line _git_](https://git-scm.com/install)
+
+::::::::::::::::

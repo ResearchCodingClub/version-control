@@ -17,56 +17,37 @@ carpentry: 'incubator'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'Introduction to Version Control with Git and GitHub'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2026-04-29'
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'lesson, The Carpentries, version control, git, github, Research Coding Club'
 
 # Life cycle stage of the lesson
 # refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'stable'
 
 # License of the lesson materials (recommended CC-BY 4.0)
-license: 'CC-BY 4.0'
+license: 'CC-BY-SA 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://example.com/template-source/lesson-example'
+source: 'https://github.com/ResearchCodingClub/intro-to-version-control'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'peter.hill@york.ac.uk'
 
 # Navigation ------------------------------------------------
 #
-# Use the following menu items to specify the order of
-# individual pages in each dropdown section. Leave blank to
-# include all pages in the folder.
-#
-# Example -------------
-#
-# episodes:
-# - introduction.md
-# - first-steps.md
-#
-# learners:
-# - setup.md
-#
-# instructors:
-# - instructor-notes.md
-#
-# profiles:
-# - one-learner.md
-# - another-learner.md
-
 # Order of episodes in your lesson
 episodes: 
-- introduction.Rmd
+- 00-introduction.md
+- 01-basics.md
 
 # Information for Learners
 learners: 
@@ -81,5 +62,5 @@ profiles:
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
-
-
+varnish: ResearchCodingClub/uoy-varnish@main
+url: 'https://researchcodingclub.github.io/intro-to-version-control/'
