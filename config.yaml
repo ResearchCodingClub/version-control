@@ -48,6 +48,9 @@ contact: 'peter.hill@york.ac.uk'
 episodes: 
 - 00-introduction.md
 - 01-basics.md
+- 02-remotes.md
+- 03-undoing-changes.md
+- 04-branches.md
 
 # Information for Learners
 learners: 

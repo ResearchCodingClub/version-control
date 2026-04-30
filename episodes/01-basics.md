@@ -72,20 +72,15 @@ do, run git status , it often has useful info!
   page for your repository
 - **.gitignore**: A file describing the things in your repository that you don't
   want to track
+  - [`.gitignore` file generator](https://www.toptal.com/developers/gitignore/)
+  - [big `.gitignore` collection](https://github.com/github/gitignore)
 - **License**: a document describing the rights and permissions you grant to
   others who may wish to use your software
-
-
-- In British English this is correctly spelled "licence" which is a noun --- "license" is the verb, c.f. "advice/advise"
-
-.gitignore file generator:   https://www.toptal.com/developers/gitignore/
-
-Software licence picker:   https://choosealicense.com/  
-
+  - [Software licence picker](https://choosealicense.com)
 
 ## Adding first file {#slide-17}
 
-- Use your favourite text editor to create  README.md
+- Use your favourite text editor to create `README.md`
 
 ```markdown
 # Learning Git
@@ -97,12 +92,13 @@ Here's our todo:
 - [ ] Fix this tpyo
 ```
 
-Aside: It is a  Very Good Idea  to have a README in all your projects that lets people know:
+Aside: It is a **Very Good Idea** to have a `README` in all your projects that
+lets people know:
 
 - what/who the project is for
 - basic instructions on how to use the project
 
-All git web services will show the README as a landing page for the repo
+All git web services will show the `README` as a landing page for the repo
 
 ::: group-tab
 
@@ -120,7 +116,7 @@ Our changes
 
 ### Command line
 
-- Run   git status  again and note the different output
+- Run `git status` again and note the different output
 - Git is aware that you have added a file
 
 - Need to set up your name and email address
@@ -166,9 +162,13 @@ git commit -m "<message>"
 
 :::
 
-- A nice way to think about commit labels is that they should concisely complete the following sentence: " [This commit will...] " e.g. " [This commit will...]  Create README.md "
-- The commit message can contain as little or as much as appropriate to help you and others understand what the change consists of ( be kind to Future You !)
-- Best practice is to keep first line short, like an email subject line, and optionally a longer explanation below, separated by a blank line
+- A nice way to think about commit labels is that they should concisely complete
+  the following sentence: "*[This commit will...]*", for example: "*[This commit
+  will...]*  Create README.md"
+- The commit message can contain as little or as much as appropriate to help you
+  and others understand what the change consists of (be kind to _Future You_!)
+- Best practice is to keep first line short, like an email subject line, and
+  optionally a longer explanation below, separated by a blank line
 - How frequently should you commit? What should be in a commit?
 
 ## Viewing history
@@ -290,3 +290,41 @@ No! It doesn't tell us anything about the actual changes.
 
 :::
 ::::::::::::::::::::::::::::::::::::::
+
+## Making More Commits {#slide-28}
+
+- What makes a good commit?
+
+<!-- -->
+
+- Atomic --- does a  whole  thing, not part of a thing
+- Orthogonal --- does  one  thing at a time, not lots of things
+
+<!-- -->
+
+- These principles make it easier:
+
+<!-- -->
+
+- to understand the history of a repo
+- undo a change
+
+<!-- -->
+
+- Examples:
+
+<!-- -->
+
+- Add a whole new feature
+- Fix a bug
+- Fix all instances of the same bug?
+
+<!-- -->
+
+- Should we fix the typo at the same time or not?
+- Now go ahead and  a dd  the file and  commit  it
+
+<!-- -->
+
+- What would a good commit message be for this change? Discuss
+
