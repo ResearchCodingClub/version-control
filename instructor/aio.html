@@ -260,6 +260,42 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="02-remotes.html">3. Remote Repositories</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="03-undoing-changes.html">4. Undoing Changes</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="04-branches.html">5. Working with others</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -440,7 +476,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-01-basics"><p>Content from <a href="01-basics.html">The Basics: Working Alone</a></p>
 <hr>
-<p>Last updated on 2026-04-29 |
+<p>Last updated on 2026-04-30 |
 
         <a href="https://github.com/ResearchCodingClub/intro-to-version-control/edit/main/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -491,7 +527,7 @@ any links that you are not going to use.
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-GitHubDesktop" class="tab-pane show active" aria-labelledby="nav-tab-1-GitHubDesktop" role="tabpanel">
+<div id="nav-tabpanel-1-GitHubDesktop" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-GitHubDesktop">
 <figure><img src="../fig/gui_make_repo.png" alt="Starting page of GitHub Desktop. There's an arrow pointing to 'Create a New Repository on your hard drive'" class="figure mx-auto d-block"><div class="figcaption">GitHub Desktop view</div>
 </figure><p>Click “Create a new Repository on your hard drive”.</p>
 <ul>
@@ -507,7 +543,7 @@ you or some organisation (e.g. university-of-york) that you are a member
 of?</li>
 </ul>
 </div>
-<div id="nav-tabpanel-1-Commandline" class="tab-pane" aria-labelledby="nav-tab-1-Commandline" role="tabpanel">
+<div id="nav-tabpanel-1-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Commandline">
 <p>First, we’re going to change the default name of the first branch to
 <code>main</code>, which is a very common convention nowadays:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -539,24 +575,34 @@ what to do, run git status , it often has useful info!</p>
 </h2>
 <hr class="half-width">
 <ul>
-<li><p><strong>README.md</strong>: A file describing the project you
-have under version control. Typically written in Markdown and is nicely
-rendered on the GitHub page for your repository</p></li>
-<li><p><strong>.gitignore</strong>: A file describing the things in your
-repository that you don’t want to track</p></li>
-<li><p><strong>License</strong>: a document describing the rights and
-permissions you grant to others who may wish to use your
-software</p></li>
-<li><p>In British English this is correctly spelled “licence” which is a
-noun — “license” is the verb, c.f. “advice/advise”</p></li>
+<li>
+<strong>README.md</strong>: A file describing the project you have
+under version control. Typically written in Markdown and is nicely
+rendered on the GitHub page for your repository</li>
+<li>
+<strong>.gitignore</strong>: A file describing the things in your
+repository that you don’t want to track
+<ul>
+<li><a href="https://www.toptal.com/developers/gitignore/" class="external-link"><code>.gitignore</code>
+file generator</a></li>
+<li><a href="https://github.com/github/gitignore" class="external-link">big
+<code>.gitignore</code> collection</a></li>
 </ul>
-<p>.gitignore file generator: <a href="https://www.toptal.com/developers/gitignore/" class="external-link uri">https://www.toptal.com/developers/gitignore/</a></p>
-<p>Software licence picker: <a href="https://choosealicense.com/" class="external-link uri">https://choosealicense.com/</a></p>
-</section><section><h2 class="section-heading" id="slide-17">Adding first file<a class="anchor" aria-label="anchor" href="#slide-17"></a>
+</li>
+<li>
+<strong>License</strong>: a document describing the rights and
+permissions you grant to others who may wish to use your software
+<ul>
+<li><a href="https://choosealicense.com" class="external-link">Software licence
+picker</a></li>
+</ul>
+</li>
+</ul></section><section><h2 class="section-heading" id="slide-17">Adding first file<a class="anchor" aria-label="anchor" href="#slide-17"></a>
 </h2>
 <hr class="half-width">
 <ul>
-<li>Use your favourite text editor to create README.md</li>
+<li>Use your favourite text editor to create <code>README.md</code>
+</li>
 </ul>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -569,14 +615,14 @@ noun — “license” is the verb, c.f. “advice/advise”</p></li>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1" aria-label="code-block-5-6"></a><span class="ss">- </span><span class="va">[ ]</span> Make our first commit</span>
 <span id="cb5-7"><a href="#cb5-7" tabindex="-1" aria-label="code-block-5-7"></a><span class="ss">- </span><span class="va">[ ]</span> Fix this tpyo</span></code></pre>
 </div>
-<p>Aside: It is a Very Good Idea to have a README in all your projects
-that lets people know:</p>
+<p>Aside: It is a <strong>Very Good Idea</strong> to have a
+<code>README</code> in all your projects that lets people know:</p>
 <ul>
 <li>what/who the project is for</li>
 <li>basic instructions on how to use the project</li>
 </ul>
-<p>All git web services will show the README as a landing page for the
-repo</p>
+<p>All git web services will show the <code>README</code> as a landing
+page for the repo</p>
 <div class="tabs">
 <nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-2-GitHubDesktop" name="GitHubDesktop" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-GitHubDesktop" type="button" role="tab" aria-controls="nav-tabpanel-2-GitHubDesktop" aria-selected="true">
@@ -591,7 +637,7 @@ repo</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-GitHubDesktop" class="tab-pane show active" aria-labelledby="nav-tab-2-GitHubDesktop" role="tabpanel">
+<div id="nav-tabpanel-2-GitHubDesktop" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-GitHubDesktop">
 <ul>
 <li>Take a look at what happens in the GitHub desktop window</li>
 </ul>
@@ -604,12 +650,13 @@ right hand panel, there’s a diff showing the new file</div>
 <li>Add a commit label and a commit message to the box</li>
 </ul>
 </div>
-<div id="nav-tabpanel-2-Commandline" class="tab-pane" aria-labelledby="nav-tab-2-Commandline" role="tabpanel">
-<p>Run git status again and note the different output</p>
+<div id="nav-tabpanel-2-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Commandline">
+<p>Run <code>git status</code> again and note the different output</p>
 <p>Git is aware that you have added a file</p>
 <p>Need to set up your name and email address</p>
 <ul>
-<li><p>Run git status again and note the different output</p></li>
+<li><p>Run <code>git status</code> again and note the different
+output</p></li>
 <li><p>Git is aware that you have added a file</p></li>
 <li><p>Need to set up your name and email address</p></li>
 </ul>
@@ -664,11 +711,12 @@ commit</p>
 </div>
 <ul>
 <li>A nice way to think about commit labels is that they should
-concisely complete the following sentence: ” [This commit will…] ”
-e.g. ” [This commit will…] Create README.md ”</li>
+concisely complete the following sentence: “<em>[This commit
+will…]</em>”, for example: “<em>[This commit will…]</em> Create
+README.md”</li>
 <li>The commit message can contain as little or as much as appropriate
-to help you and others understand what the change consists of ( be kind
-to Future You !)</li>
+to help you and others understand what the change consists of (be kind
+to <em>Future You</em>!)</li>
 <li>Best practice is to keep first line short, like an email subject
 line, and optionally a longer explanation below, separated by a blank
 line</li>
@@ -690,7 +738,7 @@ line</li>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-GitHubDesktop" class="tab-pane show active" aria-labelledby="nav-tab-3-GitHubDesktop" role="tabpanel">
+<div id="nav-tabpanel-3-GitHubDesktop" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-GitHubDesktop">
 <ul>
 <li>Switch over to the “History” tab (View &gt; History)</li>
 <li>You should be able to see your recent commit and its details</li>
@@ -699,7 +747,7 @@ line</li>
 <figure><img src="../fig/gui_log_view.png" alt="GitHub Desktop diff view with two commits" class="figure mx-auto d-block"><div class="figcaption">GitHub Desktop view</div>
 </figure>
 </div>
-<div id="nav-tabpanel-3-Commandline" class="tab-pane" aria-labelledby="nav-tab-3-Commandline" role="tabpanel">
+<div id="nav-tabpanel-3-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Commandline">
 <ul>
 <li>Run <code>git log</code> to see the repository history</li>
 <li>You should see a single commit</li>
@@ -746,10 +794,10 @@ other people / yourself!</li>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-GitHubDesktop" class="tab-pane show active" aria-labelledby="nav-tab-4-GitHubDesktop" role="tabpanel">
+<div id="nav-tabpanel-4-GitHubDesktop" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-GitHubDesktop">
 <p>The diff should appear automatically!</p>
 </div>
-<div id="nav-tabpanel-4-Commandline" class="tab-pane" aria-labelledby="nav-tab-4-Commandline" role="tabpanel">
+<div id="nav-tabpanel-4-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-Commandline">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -820,10 +868,441 @@ message?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No! It doesn’t tell us anything about the actual changes.</p>
 </div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="slide-28">Making More Commits<a class="anchor" aria-label="anchor" href="#slide-28"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>What makes a good commit?</li>
+</ul>
+<!-- --><ul>
+<li>Atomic — does a whole thing, not part of a thing</li>
+<li>Orthogonal — does one thing at a time, not lots of things</li>
+</ul>
+<!-- --><ul>
+<li>These principles make it easier:</li>
+</ul>
+<!-- --><ul>
+<li>to understand the history of a repo</li>
+<li>undo a change</li>
+</ul>
+<!-- --><ul>
+<li>Examples:</li>
+</ul>
+<!-- --><ul>
+<li>Add a whole new feature</li>
+<li>Fix a bug</li>
+<li>Fix all instances of the same bug?</li>
+</ul>
+<!-- --><ul>
+<li>Should we fix the typo at the same time or not?</li>
+<li>Now go ahead and a dd the file and commit it</li>
+</ul>
+<!-- --><ul>
+<li>What would a good commit message be for this change? Discuss</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section><section id="aio-02-remotes"><p>Content from <a href="02-remotes.html">Remote Repositories</a></p>
+<hr>
+<p>Last updated on 2026-04-30 |
+
+        <a href="https://github.com/ResearchCodingClub/intro-to-version-control/edit/main/episodes/02-remotes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I backup a repository?</li>
+<li>How do I share a repository with other people?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>To understand how to create a repository on a web service</li>
+<li>To understand how to download a repository from a web service</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="what-exactly-is-a-repository">What, exactly, is a repository?<a class="anchor" aria-label="anchor" href="#what-exactly-is-a-repository"></a>
+</h2>
+<hr class="half-width">
+<p>A git repo has two parts:</p>
+<ul>
+<li><p>a .git directory full of special files</p></li>
+<li><p>the working tree, the current state of your project and files on
+disk</p></li>
+<li><p>If you share the .git directory, you share the entire repo
+history</p></li>
+<li><p>To backup the repo, just need to backup .git</p></li>
+</ul></section><section><h2 class="section-heading" id="making-a-repo-on-github">Making a repo on Github<a class="anchor" aria-label="anchor" href="#making-a-repo-on-github"></a>
+</h2>
+<hr class="half-width">
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-1-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-1-Commandline" aria-selected="false">
+  <h2 class="tab-header" id="nav-tab-heading-1-Commandline">
+  Command line
+  </h2>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-Graphicalinterface" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-Graphicalinterface">
+<figure><img src="../fig/gui_make_github_repo.png" alt="GitHub Desktop showing fig" class="figure mx-auto d-block"></figure><p>Now click this!</p>
+</div>
+<div id="nav-tabpanel-1-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-Commandline">
+<figure><img src="../fig/cli_make_github_repo.png" alt="GitHub screenshot showing list of repositories and new repo button" class="figure mx-auto d-block"></figure><ul>
+<li>Navigate to <a href="https://github.com/your-username" class="external-link uri">https://github.com/your-username</a>
+</li>
+<li>Select the <code>Repositories</code> tab</li>
+<li>Select the green <code>New</code> icon</li>
+<li>Don’t add a <code>README</code> or <code>.gitignore</code>
+</li>
+<li>Make it <code>public</code> rather than <code>private</code>, will
+simplify things later!</li>
+<li>From the front page of your new repo, press the green
+<code>Code</code> button and copy the URL</li>
+<li>Paste it into the following command:</li>
+</ul>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>YOUR REPO URL<span class="op">&gt;</span></span></code></pre>
+</div>
+<p>This creates a reference in your copy of the repository to an
+<code>origin</code> repository on GitHub</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="pushing-your-first-commit">Pushing Your First Commit<a class="anchor" aria-label="anchor" href="#pushing-your-first-commit"></a>
+</h2>
+<hr class="half-width">
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-2-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-2-Commandline" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-Commandline">
+  Command line
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-Graphicalinterface" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-Graphicalinterface">
+<figure><img src="../fig/gui_publish_repo.png" alt="GitHub Desktop with 'Push origin' button highlighted" class="figure mx-auto d-block"></figure>
+</div>
+<div id="nav-tabpanel-2-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-Commandline">
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span> origin main</span></code></pre>
+</div>
+<p>Only need to do it this way the first time we push to a new branch.
+<code>--set-upstream</code> links your local branch main with a branch
+main in GitHub. Normally, we just need:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> push</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<figure><img src="../fig/red_button_delete.png" alt="Big red button labelled 'Do Not Press'" class="figure mx-auto d-block"><div class="figcaption">Guess what we’re going to press?</div>
+</figure><p>Your repository is now on GitHub:
+<code>https://github.com/&lt;username&gt;/&lt;repo-name&gt;</code>. This
+means it is:</p>
+<ul>
+<li>Backed up!</li>
+<li>Easily shareable !</li>
+<li>Easily accessible from other machines!</li>
+</ul>
+<p>Now delete the whole project from your computer using the file
+explorer / finder / <code>rm</code> command</p>
+</section><section><h2 class="section-heading" id="cloning-your-repository">Cloning Your Repository<a class="anchor" aria-label="anchor" href="#cloning-your-repository"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Getting your code and all of its history back is as easy as a few
+button clicks</li>
+<li>Once it has finished cloning, we should be back to where we were
+before deleting</li>
+<li>You can clone other GitHub users’ public repositories too!</li>
+</ul>
+<div class="tabs">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-3-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-3-Commandline" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-Commandline">
+  Command line
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-Graphicalinterface" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-Graphicalinterface">
+<figure><img src="../fig/gui_missing_repo.png" alt="GitHub Desktop 'Can't find git_tutorial'" class="figure mx-auto d-block"><div class="figcaption">Click “Remove”</div>
+</figure><figure><img src="../fig/gui_repo_list.png" alt="GitHub Desktop list of repositories" class="figure mx-auto d-block"><div class="figcaption">Then this</div>
+</figure>
+</div>
+<div id="nav-tabpanel-3-Commandline" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-Commandline">
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">git</span> clone https://github.com/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>repo-name<span class="op">&gt;</span></span></code></pre>
+</div>
+<ul>
+<li>This is a Good Idea!</li>
+</ul>
+<ul>
+<li>If the repository is private, you will need to set up a personal
+access token before you can clone the repository</li>
+<li>You can also set up passwordless authentication using SSH keys, see
+the GitHub documentation for more details
+<ul>
+<li>This is a Good Idea!</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="making-more-changes">Making More Changes<a class="anchor" aria-label="anchor" href="#making-more-changes"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Go ahead and make some more commits to your repository:</li>
+</ul>
+<!-- --><ul>
+<li>Fix that typo, and some more things you’ve learnt how to do</li>
+<li>On the command line, don’t forget the two-step dance: add, then
+commit</li>
+</ul>
+<!-- --><ul>
+<li>Make sure to push commits when you’ve made them!</li>
+</ul>
+<!-- --><ul>
+<li>You don’t have to push after every single commit, as long as you
+remember to push at some point</li>
+</ul>
+<!-- --><ul>
+<li>Think and chat about the way you like to work and how that might map
+onto version control history:</li>
+</ul>
+<!-- --><ul>
+<li>Do you work in big chunks and then sign off for the day?</li>
+<li>Do you often switch tasks and have trouble figuring out where you
+were when you left off?</li>
+<li>Do you program first and plan later? Or the other way around?!</li>
+</ul>
+<!-- --><ul>
+<li>Ask any questions you’d like!</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section><section id="aio-03-undoing-changes"><p>Content from <a href="03-undoing-changes.html">Undoing Changes</a></p>
+<hr>
+<p>Last updated on 2026-04-30 |
+
+        <a href="https://github.com/ResearchCodingClub/intro-to-version-control/edit/main/episodes/03-undoing-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I undo changes to a repository?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>To understand how to undo changes before making a commit</li>
+<li>To understand how to undo changes after making a commit</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="slide-38">Undoing Changes<a class="anchor" aria-label="anchor" href="#slide-38"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>One of the purposes of version control is to let you undo
+changes</li>
+<li>There are different changes we might want to undo:</li>
+</ul>
+<!-- --><ul>
+<li>Changes to the working tree</li>
+<li>Change files staged for the next commit</li>
+<li>Changes made in previous commits</li>
+<li>History ( !! ) (not covered here)</li>
+</ul></section><section><h2 class="section-heading" id="slide-39">Undoing Changes to Working Tree<a class="anchor" aria-label="anchor" href="#slide-39"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>The simplest!</li>
+<li>Github Desktop: right-click -&gt; Discard Changes</li>
+<li>CLI: git restore &lt;file&gt;...</li>
+</ul>
+<!-- --><ul>
+<li>For example: git restore README.md</li>
+<li>If you forget, run git status for a reminder</li>
+</ul>
+<!-- --><ul>
+<li>DANGER : git isn't tracking these files, so there's no way to undo
+this undo!</li>
+</ul></section><section><h2 class="section-heading" id="undoing-staged-changes">Undoing Staged Changes<a class="anchor" aria-label="anchor" href="#undoing-staged-changes"></a>
+</h2>
+<hr class="half-width">
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-1-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-1-Commandline" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-Commandline">
+  Command line
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-Graphicalinterface" class="tab-pane show active" aria-labelledby="nav-tab-1-Graphicalinterface" role="tabpanel">
+<figure><img src="../fig/gui_staged_changes.png" alt="GitHub Desktop" class="figure mx-auto d-block"></figure><p>Stage/unstage</p>
+<p>You can even stage/unstage individual lines</p>
+</div>
+<div id="nav-tabpanel-1-Commandline" class="tab-pane" aria-labelledby="nav-tab-1-Commandline" role="tabpanel">
+<ul>
+<li>CLI: git restore --staged &lt;file&gt;...</li>
+</ul>
+<ul>
+<li>For example: git restore --staged README.md</li>
+<li>If you forget, run git status for a reminder</li>
+</ul>
+<ul>
+<li>This is exactly the opposite of git add &lt;file&gt;...</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="slide-42">Commit Hashes<a class="anchor" aria-label="anchor" href="#slide-42"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Each commit in the history has a unique identifier associated with
+it, the commit hash</li>
+<li>This is a long string that looks something like this:
+0efd1cb9e37318404b76de7c99e26fbef16ef3a3</li>
+<li>You only ever need the first 7 characters of the ID!</li>
+<li>It is used in any Git operation that needs to refer to a specific
+commit</li>
+</ul>
+<figure><img src="../fig/gui_commit_hash.png" alt="GitHub Desktop showing commit hash" class="figure mx-auto d-block"></figure><div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="ex">klcm500@matscrn</span> my_first_repository % git log</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a><span class="ex">commit</span> 0efd1cb9e37318404b76de7c99e26fbef16ef3a3 <span class="er">(</span><span class="ex">HEAD</span> <span class="at">-</span><span class="dt">\&gt;</span> main, origin/main, origin/HEAD<span class="kw">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="ex">Merge:</span> c267c36 77caf66</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a><span class="ex">Author:</span> Killian Murphy <span class="dt">\&lt;</span>killian.murphy@york.ac.uk<span class="dt">\&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a><span class="ex">Date:</span>   Mon Jan 23 16:43:31 2023 +0000]</span></code></pre>
+</div>
+</section><section><h2 class="section-heading" id="reverting-a-commit">Reverting A Commit<a class="anchor" aria-label="anchor" href="#reverting-a-commit"></a>
+</h2>
+<hr class="half-width">
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-2-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-2-Commandline" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-Commandline">
+  Command line
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-Graphicalinterface" class="tab-pane show active" aria-labelledby="nav-tab-2-Graphicalinterface" role="tabpanel">
+<ul>
+<li>GitHub desktop can’t revert many commits at once</li>
+<li>We can easily revert commits one-by-one!</li>
+<li>Switch to the “History” tab and right-click the latest commit</li>
+</ul>
+<figure><img src="../fig/gui_revert_menu.png" alt="GitHub Desktop showing right-click menu on commit" class="figure mx-auto d-block"></figure><p>Click this</p>
+<ul>
+<li>We now have a new commit that reverts the previously made
+changes</li>
+<li>We can play around with this and see if it works</li>
+<li>If we are happy with the reversion, we can push to reflect the
+reversion on GitHub</li>
+<li>With GitHub Desktop, we need to do this for each commit we want to
+revert, in reverse order</li>
+<li>With the command line, reverting multiple commits at once is
+possible - not covering that today</li>
+</ul>
+<figure><img src="../fig/gui_reverted_commit.png" alt="GitHub Desktop showing reverted commit" class="figure mx-auto d-block"></figure>
+</div>
+<div id="nav-tabpanel-2-Commandline" class="tab-pane" aria-labelledby="nav-tab-2-Commandline" role="tabpanel">
+<ul>
+<li>First need to identify the ID of the commit we want to revert - the
+last commit we made. Take a look at git log output:
+<code>commit f7cfe07b8d7691241ebca90c19b187da142350c1 (HEAD -\&gt; main)</code>.
+We only need the first 7 characters of this ID string!</li>
+<li>Then we run: <code>git revert f7cfe07</code>. Since we are making a
+new commit which reverts the previous commit, we are prompted for a
+label and a message. This is a good opportunity to document why we are
+reverting a commit</li>
+<li>If we are happy with the reversion, we can push the changes as with
+any other commit</li>
+</ul>
 </div>
 </div>
 </div>
@@ -831,7 +1310,502 @@ message?</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</section></section><section id="aio-04-branches"><p>Content from <a href="04-branches.html">Working with others</a></p>
+<hr>
+<p>Last updated on 2026-04-30 |
+
+        <a href="https://github.com/ResearchCodingClub/intro-to-version-control/edit/main/episodes/04-branches.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I work on multiple things at the same time?</li>
+<li>How do I work with other people on the same repository?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>To understand what a branch is</li>
+<li>To understand how to create branches</li>
+<li>To understand how to merge branches</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="branches">Branches<a class="anchor" aria-label="anchor" href="#branches"></a>
+</h2>
+<hr class="half-width">
+<figure><img src="../fig/branches_main_branch.png" alt="Three commits in a line, with arrows connecting them, left to right" class="figure mx-auto d-block"></figure><p>So far, we’ve been making a straightforward series of commits</p>
+<figure><img src="../fig/branches_feature_branch_one_commits.png" alt="A fourth commit, branching off from the first three" class="figure mx-auto d-block"></figure><ul>
+<li>Branching creates a separate stream of changes within the
+repository</li>
+<li>Changes on one branch aren’t reflected on another branch, unless you
+want them to be!</li>
+<li>Branch names are like post-it notes on particular commits</li>
+</ul>
+<figure><img src="../fig/branches_feature_branch_two_commits.png" alt="A fifth commit connected to the fourth one" class="figure mx-auto d-block"></figure><figure><img src="../fig/branches_head_on_feature_branch.png" alt="A fifth commit connected to the fourth one" class="figure mx-auto d-block"></figure><ul>
+<li>Branching creates a separate stream of changes within the
+repository</li>
+<li>Changes on one branch aren’t reflected on another branch, unless you
+want them to be!</li>
+<li>Branch names are like post-it notes on particular commits</li>
+</ul>
+<figure><img src="../fig/branches_head_on_main_branch.png" alt="A fifth commit connected to the fourth one" class="figure mx-auto d-block"></figure><ul>
+<li>When we change branch, our working tree is updated to reflect the
+state of that branch</li>
+<li>git uses the label HEAD to refer to the current branch</li>
+</ul>
+<figure><img src="../fig/branches_merged.png" alt="Tree diagram showing the `my-feature` branch merged into `main`" class="figure mx-auto d-block"><div class="figcaption">Merged branches</div>
+</figure><ul>
+<li><p>We can merge one branch into another, and bring the changes
+together</p></li>
+<li><p>Merge commits are special because they have two parent commits —
+normal commits only have one!</p></li>
+<li><p>Branches are great for working on new things once you’ve got
+something working - make changes on a branch knowing that they won’t
+affect changes on the ‘main’ branch</p></li>
+<li><p>Branches are great for working together - multiple people can
+work on different changes without interfering with each other</p></li>
+<li><p>At some point you will want to bring all of these changes back
+into one place - this is called a ‘merge’</p></li>
+</ul></section><section><h2 class="section-heading" id="slide-55">Git Glossary: Branching<a class="anchor" aria-label="anchor" href="#slide-55"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Branch : a set of changes in your repository, being tracked in
+parallel to your ‘main’ branch</li>
+<li>Merge : to bring changes from one branch into another</li>
+<li>Conflict : a situation where competing changes have been made to
+some part of your repository</li>
+<li>Pull Request : a way of reviewing, labelling, and discussing a merge
+before it takes place</li>
+<li>Fork : make a copy linked to the original repo</li>
+</ul>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-Graphicalinterface" name="Graphicalinterface" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Graphicalinterface" type="button" role="tab" aria-controls="nav-tabpanel-1-Graphicalinterface" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-Graphicalinterface">
+  Graphical interface
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-Commandline" name="Commandline" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-Commandline" type="button" role="tab" aria-controls="nav-tabpanel-1-Commandline" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-Commandline">
+  Command line
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-Graphicalinterface" class="tab-pane show active" aria-labelledby="nav-tab-1-Graphicalinterface" role="tabpanel">
+<figure><img src="../fig/gui_new_branch.png" alt="GitHub Desktop showing 'New Branch' button" class="figure mx-auto d-block"></figure><p>Click this and call it <code>sandwiches</code></p>
+</div>
+<div id="nav-tabpanel-1-Commandline" class="tab-pane" aria-labelledby="nav-tab-1-Commandline" role="tabpanel">
+<p>Create a new branch called “sandwiches” and immediately switch to
+it</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu">git</span> switch <span class="at">--create</span> sandwiches</span></code></pre>
+</div>
+<p>Note: this is a newer wrapper around older commands, so you might see
+people online referring to git branch and git checkout . Those commands
+will still work, and you might have to use them if you have a git
+version older than 2.27</p>
+<div class="accordion-body">
+<p>Note: this is a newer wrapper around older commands, so you might see
+people online referring to git branch and git checkout . Those commands
+will still work, and you might have to use them if you have a git
+version older than 2.27</p>
+</div>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>Note: this is a newer wrapper around older commands, so you might see
+people online referring to git branch and git checkout . Those commands
+will still work, and you might have to use them if you have a git
+version older than 2.27</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Show details
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>Note: this is a newer wrapper around older commands, so you might see
+people online referring to git branch and git checkout . Those commands
+will still work, and you might have to use them if you have a git
+version older than 2.27</p>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Show details </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>Note: this is a newer wrapper around older commands, so you might see
+people online referring to git branch and git checkout . Those commands
+will still work, and you might have to use them if you have a git
+version older than 2.27</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><p>The branch currently only resides in our local
+repository</p></li>
+<li><p>We can publish the branch to GitHub in the same way we published
+the main branch at the start of the tutorial:</p></li>
+<li><p>GUI users can click Publish branch</p></li>
+<li><p>CLI users can run git push —set-upstream origin
+sandwiches</p></li>
+<li><p>Now other people could see your branches when they clone your
+repository</p></li>
+</ul></section><section><h2 class="section-heading" id="add-a-new-file">Add a new file<a class="anchor" aria-label="anchor" href="#add-a-new-file"></a>
+</h2>
+<hr class="half-width">
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu"># A tasty sandwich</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="in">```</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a><span class="in">bread</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a><span class="in">bread</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1" aria-label="code-block-2-7"></a><span class="in">```</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1" aria-label="code-block-2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1" aria-label="code-block-2-9"></a><span class="fu">## Todos:</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1" aria-label="code-block-2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1" aria-label="code-block-2-11"></a><span class="ss">-  </span><span class="va">[ ]</span> add filling</span></code></pre>
+</div>
+<p>sandwich.md</p>
+<ul>
+<li>Let’s add a new file: sandwich.md</li>
+<li>We’ll fill it in later!</li>
+<li>Make sure you’re on your new branch (” sandwiches ” rather than ”
+main “)</li>
+<li>Add the new file, and commit it with a useful message</li>
+</ul></section><section><h2 class="section-heading" id="slide-60">Working On Branches<a class="anchor" aria-label="anchor" href="#slide-60"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li><p>Switch back to your main branch. What do you notice?</p></li>
+<li><p>CLI users: <code>git switch main</code> (note no
+<code>--create</code> flag!)</p></li>
+<li><p>CLI users: try <code>git switch m&lt;tab&gt;</code></p></li>
+<li><p>Have a look in your file explorer / finder / directory listing in
+your terminal in between switching branches</p></li>
+<li><p>Git is keeping track of changes to these branches
+separately</p></li>
+<li><p>Files that only exist on one branch will not be visible to you if
+you have switched away from that branch</p></li>
+<li><p>If we now want our main branch to reflect changes made on
+<code>sandwiches</code>, we need to merge <code>sandwiches</code> into
+<code>main</code></p></li>
+<li>
+<p>Before we do this, we can review the changes using a
+<code>Pull Request</code></p>
+<ul>
+<li>Slight misnomer from Github here, we’re really requesting to merge
+branches. Oh well, there are two hard problems in computer science…</li>
+</ul>
+</li>
+</ul></section><section><h2 class="section-heading" id="creating-a-pull-request">Creating A Pull Request<a class="anchor" aria-label="anchor" href="#creating-a-pull-request"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Navigate to
+<code>https://github.com/&lt;username&gt;/&lt;repo-name&gt;</code>
+</li>
+<li>Select the <code>Pull requests</code> tab</li>
+<li>Select <code>New pull request</code>
+</li>
+<li>We need to select two branches to be compared for a merge - we want
+to set <code>main</code> as our base branch (the branch into which
+changes will be merged) and <code>sandwiches</code> as the compare
+branch, the branch from which changes will be taken</li>
+<li>GitHub will show us some information about the changes that we are
+looking to merge</li>
+<li>With these branches correctly selected, select
+<code>Create pull request</code>
+</li>
+</ul>
+<p><img src="../fig/github_new_pr.png" class="figure">{alt=“GitHub screenshot
+showing”Open a pull request” page”}</p>
+<ul>
+<li>Now we can add a title and formatted description of the changes to
+make it easy for us and others to understand the changes to be
+merged</li>
+<li>PRs are a good opportunity for you to describe the changes to
+yourself, review them, and make sure you are happy with them, before
+merging them with your main branch</li>
+<li>If there are multiple people working on your repository this is a
+great time for them to have a look at your changes and add any comments
+they might have!</li>
+<li>Let’s add a nice description and click Create pull request , then
+see if we can get somebody else to review your changes</li>
+</ul></section><section><h2 class="section-heading" id="merging-a-pull-request">Merging A Pull Request<a class="anchor" aria-label="anchor" href="#merging-a-pull-request"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li><p>Once you are done experimenting with your Pull Request, select
+<code>Merge pull request</code>:</p></li>
+<li><p>This takes the changes from the <code>compare</code> branch - the
+branch you created earlier - and merges them onto the <code>base</code>
+branch - the <code>main</code> branch of your repository</p></li>
+<li><p>In this case, the changes should be able to be merged
+automatically</p></li>
+<li><p>After merging, you can select <code>Delete branch</code> - we are
+finished merging the changes and in this case don’t need to keep
+it!</p></li>
+<li><p>We now need to make sure our local repositories have kept up with
+the changes that have happened on GitHub…</p></li>
+</ul></section><section><h2 class="section-heading" id="slide-65">Keeping Repositories Up To Date - GUI<a class="anchor" aria-label="anchor" href="#slide-65"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>We have made some changes in GitHub that we need to reflect in our
+local repository!</li>
+<li>In the GitHub Desktop app, we can use the ‘Fetch origin’ button to
+get the latest changes from GitHub</li>
+<li>If we switch back to the main branch after doing so, we will see a
+Merge commit in the history</li>
+<li>We can also delete our branch that has been merged, since we are
+finished with it</li>
+</ul>
+<p><img src="../fig/gui_fetch_origin.png" class="figure">{alt=“GitHub Desktop
+showing”Fetch origin” button”}</p>
+<p>Click this!</p>
+</section><section><h2 class="section-heading" id="slide-66">Keeping Repositories Up To Date - CLI<a class="anchor" aria-label="anchor" href="#slide-66"></a>
+</h2>
+<hr class="half-width">
+<p>git switch main</p>
+<p>^ Switch back to our main branch, if we aren’t already on it</p>
+<p>git pull</p>
+<p>^ Get the changes from GitHub and reflect them in our local
+repository</p>
+<p>git branch -d sandwiches</p>
+<p>^ Delete the local copy of sandwiches , as we have finished with
+it</p>
+</section><section><h2 class="section-heading" id="slide-67">Collaborating With Others<a class="anchor" aria-label="anchor" href="#slide-67"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Git is distributed — every copy of a repo has all of its history,
+can make branches, and can pull branches from other copies</li>
+<li>We usually want to have one “official” repo that is the main
+version</li>
+<li>On Github we can add collaborators to our repos</li>
+</ul>
+<!-- --><ul>
+<li>Settings &gt; Collaborators &gt; Add People</li>
+<li>But this has to be done by maintainers of the repo</li>
+</ul></section><section><h2 class="section-heading" id="slide-68">Collaborating With Others<a class="anchor" aria-label="anchor" href="#slide-68"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>What if we want to contribute to someone else’s repo?</li>
+<li>Fork : make a copy linked to the original repo</li>
+<li>Github allows us to make PRs from forks into the original without
+needing to be added as a collaborator</li>
+</ul>
+<!-- --><ul>
+<li>Only approved people can actually merge them though!</li>
+</ul>
+<p><img src="../fig/github_fork.png" alt="Fork" class="figure">{alt=“Screenshot of
+GitHub showing”Fork” button”}</p>
+</section><section><h2 class="section-heading" id="slide-69">Introducing Conflicts<a class="anchor" aria-label="anchor" href="#slide-69"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Conflicts happen when something in a file has been changed in more
+than one place</li>
+<li>Git doesn’t know what you want the file to contain, so you have to
+help it!</li>
+<li>One way this can happen is when multiple people work on e.g. the
+same bit of code on their own branches, and you want to merge those
+branches back together</li>
+</ul></section><section><h2 class="section-heading" id="slide-70">Conflicting Commits<a class="anchor" aria-label="anchor" href="#slide-70"></a>
+</h2>
+<hr class="half-width">
+<figure><img src="../fig/branches_conflict.png" alt="A conflict when merging branches" class="figure mx-auto d-block"></figure><div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-person-1" name="person-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-person-1" type="button" role="tab" aria-controls="nav-tabpanel-2-person-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-person-1">
+  person-1
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-person-a" name="person-a" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-person-a" type="button" role="tab" aria-controls="nav-tabpanel-2-person-a" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-person-a">
+  person-a
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-person-1" class="tab-pane show active" aria-labelledby="nav-tab-2-person-1" role="tabpanel">
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu"># A tasty sandwich</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a><span class="in">```</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a><span class="in">bread</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1" aria-label="code-block-3-5"></a><span class="in">hummus</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1" aria-label="code-block-3-6"></a><span class="in">bread</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1" aria-label="code-block-3-7"></a><span class="in">```</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1" aria-label="code-block-3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1" aria-label="code-block-3-9"></a><span class="fu">## Todos:</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1" aria-label="code-block-3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1" aria-label="code-block-3-11"></a><span class="ss">- </span><span class="va">[x]</span> add filling</span></code></pre>
+</div>
+</div>
+<div id="nav-tabpanel-2-person-a" class="tab-pane" aria-labelledby="nav-tab-2-person-a" role="tabpanel">
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu"># A tasty sandwich</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a><span class="in">```</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a><span class="in">bread</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a><span class="in">Maslow's hierarchy of needs</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1" aria-label="code-block-4-6"></a><span class="in">bread</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1" aria-label="code-block-4-7"></a><span class="in">```</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1" aria-label="code-block-4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1" aria-label="code-block-4-9"></a><span class="fu">## Todos:</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1" aria-label="code-block-4-10"></a></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1" aria-label="code-block-4-11"></a><span class="ss">- </span><span class="va">[x]</span> add filling</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="slide-71">Conflicting PRs<a class="anchor" aria-label="anchor" href="#slide-71"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Partner up with the person next to you</li>
+<li>Decide who is “person A” and who is “person 1”</li>
+</ul>
+<p>Person A</p>
+<ul>
+<li>Fork Person 1’s repo (you might need to rename it!)</li>
+<li>Clone it locally ( Code to get the URL)</li>
+<li>Make a new branch person-A</li>
+<li>Add a filling to sandwich.md and check the box ( [ ] → [x] )</li>
+<li>Commit and push to your fork of the repo</li>
+<li>Open a PR of your person-A branch into Person 1’s main branch —
+don’t merge yet!</li>
+</ul>
+<p>Person 1</p>
+<ul>
+<li>Make a new branch person-1</li>
+<li>Add a different filling to sandwich.md and check the box ( [ ] → [x]
+)</li>
+<li>Commit and push to your repo</li>
+<li>Open a PR of your person-1 branch into your main branch and merge it
+— don’t merge yet!</li>
+</ul></section><section><h2 class="section-heading" id="slide-72">Resolving Conflicts<a class="anchor" aria-label="anchor" href="#slide-72"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>We now have two branches to merge onto the main branch!</li>
+<li>Set up a Pull Request for each of these branches</li>
+<li>You should be able to merge the Pull Request for one of these
+branches without conflicts</li>
+<li>After merging the first one, the second Pull Request should now tell
+you that there are conflicts to be resolved</li>
+<li>We have to tell Git what we want the conflicting file to look like
+in order to continue</li>
+</ul></section><section><h2 class="section-heading" id="slide-73">Resolving Conflicts<a class="anchor" aria-label="anchor" href="#slide-73"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>If you select ‘Resolve conflicts’ on the Pull Request, GitHub will
+show you something like this</li>
+<li>This is git’s conflict syntax - anything above the line of ===
+characters is what that section of the file looks like in the person-1
+branch</li>
+<li>Below the line of === characters is what that section of the file
+looks like on the base branch</li>
+<li>We can choose how we want to resolve the conflict by removing
+everything we don’t want to keep, including the Git conflict
+markers!</li>
+<li>Once you are done, select Mark as resolved — you can now Commit
+merge to resolve the conflicts and continue</li>
+<li>Notice how the checkbox didn’t cause a conflict, even though you
+both changed it?</li>
+<li>If you merge on the command line, git puts these conflict markers
+straight into the file and expects you to fix them before you merge</li>
+</ul>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu"># A tasty sandwich</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a><span class="in">```</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1" aria-label="code-block-5-4"></a><span class="in">bread</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1" aria-label="code-block-5-5"></a><span class="in">&lt;&lt;&lt;&lt;&lt;&lt;&lt; person-1</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1" aria-label="code-block-5-6"></a><span class="in">hummus</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1" aria-label="code-block-5-7"></a><span class="in">=======</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1" aria-label="code-block-5-8"></a><span class="in">Maslow's hierarchy of needs</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1" aria-label="code-block-5-9"></a><span class="in">&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1" aria-label="code-block-5-10"></a><span class="in">bread</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1" aria-label="code-block-5-11"></a></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1" aria-label="code-block-5-12"></a><span class="in">## Todos:</span></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1" aria-label="code-block-5-13"></a></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1" aria-label="code-block-5-14"></a><span class="in">- [x] add filling</span></span></code></pre>
+</div>
+</section><section><h2 class="section-heading" id="slide-74">Summary<a class="anchor" aria-label="anchor" href="#slide-74"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Create a branch in a repository, allowing separate streams of
+changes to be tracked</li>
+<li>Switch between branches in a repository if you need to work on
+multiple streams of changes simultaneously</li>
+<li>Create pull requests when you want to merge changes from a branch
+into another branch</li>
+<li>Merge a pull request when you and collaborators are happy with the
+changes</li>
+<li>Pull changes from GitHub to synchronise your local repository</li>
+<li>Resolve conflicts when there are overlapping changes to some part of
+your repository</li>
+</ul></section><section><h2 class="section-heading" id="slide-75">Additional Resources<a class="anchor" aria-label="anchor" href="#slide-75"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Git</li>
+<li>Version Control with Git: Summary and Setup</li>
+<li>Introducing Version Control with Git</li>
+<li>Hello World - GitHub Docs</li>
+<li>Git &amp; Github through GitKraken Client - From Zero to Hero!</li>
+</ul>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ --></section></section>
 </div>
     </main>
 </div>
@@ -882,8 +1856,8 @@ any links that you are not going to use.
   "url": "https://researchcodingclub.github.io/intro-to-version-control/instructor/aio.html",
   "identifier": "https://researchcodingclub.github.io/intro-to-version-control/instructor/aio.html",
   "dateCreated": "2026-04-29",
-  "dateModified": "2026-04-29",
-  "datePublished": "2026-04-29"
+  "dateModified": "2026-04-30",
+  "datePublished": "2026-04-30"
 }
 
   </script><script>
