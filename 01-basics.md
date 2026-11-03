@@ -33,6 +33,8 @@ Click "Create a new Repository on your hard drive".
 - **Organisation**: the ownership of your repository - you or some organisation
   (e.g. university-of-york) that you are a member of?
 
+Once you've created the repository, click "Show in your File Manager".
+
 ### Command line
 
 First, we're going to change the default name of the first branch to `main`,
@@ -77,6 +79,69 @@ do, run git status , it often has useful info!
 - **License**: a document describing the rights and permissions you grant to
   others who may wish to use your software
   - [Software licence picker](https://choosealicense.com)
+
+## Working with files
+
+Throughout this lesson we'll be working with plain text files -- basically, no
+fancy formatting. If `git` shows you funny characters or messy files, it's
+likely your text editor has saved the file with formatting, such as a Rich Text
+Format (RTF) file.
+
+::: group-tab
+
+### Windows
+
+By default, Windows tries to be helpful and doesn't show file extensions, so
+first we'll want to turn them back on. Click the three-dot icon in the menu bar,
+then open `Settings`. Under the `View` tab, untick the `Hide extensions` box.
+
+![Showing file extensions in Windows](fig/windows_unhide_extensions_annotated.png){alt="Settings menu showing how to unhide file extensions in Windows File Explorer"}
+
+Now you can create a new text file from the right-click menu in File Explorer.
+
+![Creating a new text file](fig/new_text_file_annotated.png){alt="Creating a new text file in Windows File Explorer"}
+
+### Mac (GUI)
+
+The default text editor app on Mac is called `TextEdit`. By default, this will
+save files with formatting in the RTF format. You can remove the formatting by going to the `Format` menu and selecting `Make Plain Text`.
+
+![Converting a file to plain text](fig/mac_remove_formatting.png){alt="Format menu for TextEdit on Macs"}
+
+You can also change the default format via `TextEdit > Settings > New Document`
+and selecting "Plain text".
+
+![Changing the default format to plain text](fig/mac_change_format.png){alt="New Document settings menu for TextEdit on Macs"}
+
+### Linux and Mac Command Line
+
+There are _many_ different text editors: Emacs, Vim, nano, Kate, VS Code, to
+name just a few. Which one you use is completely up to you; if you don't already
+have a favourite, then we recommend using `nano` for this lesson -- it's a
+simple, no-frills editor.
+
+To set your editor for `git`, run:
+
+```bash
+git config --global core.editor "nano"
+```
+
+replacing `nano` with your preferred editor.
+
+When you open `nano`, it will show you keyboard shortcuts at the bottom of the
+screen, including how to save (`Write Out`) and `Exit`. These shortcuts use the
+`^` character to represent the <kbc>Ctrl</kbd> key, so to save and exit, press
+<kbd>Ctrl</kbd>+<kbd>g</kbd> followed by <kbd>Ctrl</kbd>+<kbd>x</kbd>.
+
+The default editor for many programs on most systems is set by the environment
+variable `EDITOR`, so you can also customise that. Out-of-the-box, this is set
+to `vim` on a lot of OSes.
+
+If you accidentally find yourself in `vim`, it can be tricky to work out how to
+get out! To exit `vim` without saving any changes, first press <kbd>Esc</kbd>
+then type `:q!` and press <kbd>Enter</kbd>, <kbd>↵</kbd>, or <kbd>Return</kbd>.
+
+:::
 
 ## Adding first file {#slide-17}
 
