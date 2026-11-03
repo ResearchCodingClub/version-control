@@ -10,22 +10,14 @@ Instructions for using R with the Carpentries template is available on the
 We recommend using the
 [`{renv}`](https://rstudio.github.io/renv/articles/renv.html) package.
 
-After cloning the repository, you can set up `renv` and install all packages with:
+Easiest way I found was via [pixi](https://pixi.prefix.dev/latest/installation/):
 
-``` r
-renv::init()
-# Optionally update packages
-renv::update()
+```console
+$ curl -fsSL https://pixi.sh/install.sh | sh
+$ pixi init
+$ pixi shell
+$ R -e 'sandpaper::serve(quiet = FALSE, port = "3435")'
 ```
-
-Once you have installed the dependencies, you can render the pages locally by
-starting R in the project root and running:
-
-``` r
-sandpaper::serve()
-```
-
-When building the site subsequently, you may need to run `renv::activate()` first.
 
 This will build the pages and start a local web-server in R and open it in your
 browser. These pages are "live" and will respond to local file changes if you
