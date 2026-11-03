@@ -2,59 +2,57 @@
 title: Setup
 ---
 
-This lesson uses _either_ a graphical interface (GitHub Desktop) _or_ the
-command line interface. You can use whichever one you're most comfortable with.
+This lesson uses _either_ a graphical user interface (GUI) _or_ the command line
+interface (CLI). You can use whichever one you're most comfortable with.
 
-There are many different interfaces to git, including many built into code
+There are many different interfaces to `git`, including many built into code
 editors such as VS Code, PyCharm, Emacs, and so on. We use GitHub Desktop here
 because its interface mostly closely maps to the standard command line
 interface, meaning that learning it is mostly easily transferable to other
-interfaces.
+interfaces. Having just one interface also makes it easier for us to teach!
+
 
 ## Software Setup
 
-::::::::::::::::::::::::::::::::::::::: discussion
+If you're using a managed Windows computer (for example, the desktops in the PC
+rooms), then both the GUI and CLI are available from the Software Centre.
 
-### Graphical Interface
+If you're using a managed Linux machine, then the CLI `git` is most likely
+already installed.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+Otherwise, you can download [GitHub
+Desktop](https://desktop.github.com/download) for the GUI, or [command line
+_git_](https://git-scm.com/install).
 
-:::::::::::::::: solution
+## Creating a GitHub Account
 
-### Managed Windows
+You will need an account for [GitHub](https://github.com) to follow episodes 7 & 8 in this lesson.
 
-Install via Software Centre
+1. Go to <https://github.com> and follow the "Sign up" link at the top-right of the window.
+2. Follow the instructions to create an account.
+3. Verify your email address with GitHub.
+4. Configure multifactor authentication (see below).
 
-::::::::::::::::
+### Multi-factor Authentication
 
-:::::::::::::::: solution
+In 2023, GitHub introduced a requirement for all accounts to have [multi-factor
+authentication (2FA)][github2fa] configured for extra security. Several options
+exist for setting up 2FA, which are summarised here:
 
-### MacOS/Linux/Unmanaged Windows
+1. If you already use an authenticator app,
+   like [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DiOS&oco=0)
+   or [Duo Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app) on your smartphone for example,
+   [add GitHub to that app][totp].
+2. If you have access to a smartphone but do not already use an authenticator app, install one and
+   [add GitHub to the app][totp].
+3. If you do not have access to a smartphone or do not want to install an authenticator app, you have two options:
+    1. [set up 2FA via text message](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)
+       ([list of countries where authentication by SMS is supported](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported)), or
+    2. [use a hardware security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key)
+       like [YubiKey](https://www.yubico.com/products/yubikey-5-overview/)
+       or the [Google Titan key](https://store.google.com/us/product/titan_security_key?hl=en-US&pli=1).
 
-[Download GitHub Desktop](https://desktop.github.com/download)
+The GitHub documentation provides [more details about configuring 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication).
 
-::::::::::::::::
-
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Command Line Interface
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-:::::::::::::::: solution
-
-### Managed Windows
-
-Install via Software Centre
-
-::::::::::::::::
-
-:::::::::::::::: solution
-
-### MacOS/Linux/Unmanaged Windows
-
-[Download command line _git_](https://git-scm.com/install)
-
-::::::::::::::::
+[github2fa]: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
+[totp]: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app
