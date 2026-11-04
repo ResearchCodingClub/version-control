@@ -10,11 +10,11 @@
 # incubator: The Carpentries Incubator
 # Note that you can also use a custom carpentry type. For more info,
 # see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
-carpentry: 'incubator'
+carpentry: 'research-coding-club'
 
 # Custom carpentry description
 # This will be used as the alt text for the logo
-# carpentry_description: "Custom Carpentry"
+carpentry_description: 'Research Coding Club at the University of York'
 
 # Overall title for pages.
 title: 'Introduction to Version Control with Git and GitHub'
