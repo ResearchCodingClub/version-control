@@ -23,6 +23,17 @@ This will build the pages and start a local web-server in R and open it in your
 browser. These pages are "live" and will respond to local file changes if you
 save them.
 
+You probably also need to install our [fork of
+`varnish`](https://github.com/ResearchCodingClub/uoy-varnish), which you have to
+do via `R`:
+
+```r
+> install.packages("remotes")
+> remotes::install_github("ResearchCodingClub/uoy-varnish")
+# or
+> remotes::install_local("path/to/varnish")
+```
+
 
 [git]: https://git-scm.com
 [r]: https://www.r-project.org/
